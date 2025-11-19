@@ -1,1 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EDUQUIZ AI — Generator Soal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>EDUQUIZ AI</h1>
+    <p class="subtitle">Generator Soal & Kuis — Web Demo</p>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>Buat Soal Baru</h2>
+      <form id="quizForm">
+        <label>Topik / Materi
+          <input id="topic" type="text" placeholder="Contoh: Persamaan Kuadrat / Sejarah Reformasi 1998" required />
+        </label>
+
+        <label>Kelas / Tingkat
+          <select id="grade">
+            <option value="X">X</option>
+            <option value="XI" selected>XI</option>
+            <option value="XII">XII</option>
+          </select>
+        </label>
+
+        <label>Tipe Soal
+          <select id="type">
+            <option value="mcq">Pilihan Ganda (MCQ)</option>
+            <option value="essay">Esai / Uraian</option>
+            <option value="tf">Benar / Salah</option>
+          </select>
+        </label>
+
+        <label>Jumlah Soal
+          <input id="count" type="number" min="1" max="50" value="5" required />
+        </label>
+
+        <div class="row">
+          <button id="generate" type="submit">Buat Soal</button>
+          <button id="copy" type="button">Salin ke Clipboard</button>
+          <button id="download" type="button">Download .txt</button>
+        </div>
+
+        <p class="hint">Opsional: Aktifkan AI di <code>app.js</code> & gunakan backend untuk hasil yang lebih variatif.</p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Hasil / Preview</h2>
+      <div id="result" class="result">Belum ada soal — klik <b>Buat Soal</b>.</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>EDUQUIZ AI • Demo project • Buat untuk FESTIKA JATIM 2025</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
 
