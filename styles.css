@@ -1,1 +1,28 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --accent:#2b6ef6;
+  --muted:#666;
+  --pad:18px;
+  --radius:12px;
+}
 
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:var(--bg);color:#222}
+.topbar{background:linear-gradient(90deg,#2b6ef6,#5da6ff);color:white;padding:20px;border-bottom:1px solid rgba(0,0,0,0.06)}
+.topbar h1{margin:0;font-size:20px}
+.topbar .subtitle{margin:4px 0 0;font-size:13px;opacity:.95}
+
+.container{max-width:980px;margin:28px auto;padding:0 16px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{background:var(--card);padding:var(--pad);border-radius:var(--radius);box-shadow:0 6px 18px rgba(32,45,66,0.06)}
+label{display:block;margin-bottom:10px;font-size:14px;color:#222}
+input[type=text], select, input[type=number]{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e9ef;background:#fbfdff}
+.row{display:flex;gap:10px;margin-top:10px}
+button{background:var(--accent);color:white;border:none;padding:10px 16px;border-radius:8px;cursor:pointer}
+button[type=button]{background:#6b7280}
+.result{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px;border-radius:8px;background:#f8fafc;border:1px dashed #e6eefc;min-height:220px;color:#111}
+.hint{font-size:12px;color:var(--muted);margin-top:8px}
+.footer{text-align:center;margin:22px 0;color:#666}
+@media (max-width:900px){
+  .container{grid-template-columns:1fr}
+}
