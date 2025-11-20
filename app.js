@@ -1,6 +1,6 @@
 // === CONFIG BACKEND ===
 // Isi dengan URL backend kamu (misalnya dari Vercel)
-const BACKEND_URL = "https://project-lomba-backend-4k6379c4r-leons-projects-85c419b9.vercel.app";
+const BACKEND_URL = "https://project-lomba-backend.vercel.app";
 
 const form = document.getElementById("quizForm");
 const resultEl = document.getElementById("result");
