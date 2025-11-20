@@ -1,5 +1,5 @@
 // === CONFIG BACKEND ===
-// Gunakan domain backend Vercel
+// Gunakan domain backend Vercelh
 const BACKEND_URL = "https://project-lomba-backend.vercel.app";
 
 // Ambil elemen HTML
