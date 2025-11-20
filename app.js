@@ -1,6 +1,6 @@
 // === CONFIG BACKEND ===
 // Isi dengan URL backend kamu (misalnya dari Vercel)
-const BACKEND_URL = "https://nama-backend-kamu.vercel.app";
+const BACKEND_URL = "https://project-lomba-backend-4k6379c4r-leons-projects-85c419b9.vercel.app";
 
 const form = document.getElementById("quizForm");
 const resultEl = document.getElementById("result");
@@ -21,6 +21,7 @@ form.addEventListener("submit", async (e) => {
     // Jika backend aktif → gunakan AI beneran
     if (BACKEND_URL) {
       const resp = await fetch(`${BACKEND_URL}/api/generate`, {
+
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic, grade, type, count }),
